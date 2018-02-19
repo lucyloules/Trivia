@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia</title>
+  <!-- Icono de pestaña -->
+  <link rel="shortcut icon" href="assets/img/trivia.png" type="image/png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Sacramento" rel="stylesheet">
+  <!-- Materialize Css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+<main>
+  <center>
+    <img class="responsive-img logo" src="assets/img/trivia.png" />
+    <div class="container">
+      <div class=" marco z-depth-1 grey lighten-4 row">
+        <h5 class="indigo-text">Please, login into your account</h5>
+<!-- Ingreso con google -->
+        <form class="col s12" method="post">
+          <div class='row container'>
+            <button type='submit' name='btn_google' class='col s12 btn waves-effect red social'>
+              <i class="fa fa-google" aria-hidden="true"></i> Sign Google
+            </button>
+            <button type='submit' name='btn_facebook' class='col s12 btn waves-effect blue social'>
+              <i class="fa fa-facebook" aria-hidden="true"></i> Sign Facebook
+            </button>
+            <div class='col s12'>
+            </div>
+          </div>
+<!-- Input email-->
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input class='validate' type='email' name='email' id='email' />
+              <label for='email'>Enter your email</label>
+            </div>
+          </div>
+<!-- Input Password -->
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input class='validate' type='password' name='password' id='password' />
+              <label for='password'>Enter your password</label>
+            </div>
+            <label style='float: right;'>
+              <a href='#!'>
+                <b>Forgot Password?</b>
+              </a>
+            </label>
+          </div>
+<!-- boton login -->
+          <center>
+            <div class='row'>
+              <button type='submit' name='btn_login' class='btn_login col s12 btn pink lighten-1'>Login</button>
+              <a href="#!">Create account</a>
+            </div>
+          </center>
+        </form>
+      </div>
+    </div>
+    
+  </center>
+</main>
+<div id="quizContainer" class="container hide">
+  <img class="responsive-img" src="assets/img/logo.png" alt="">
+  <div class="input-field offset-s1 offset-m1 offset-l1 col m5 s10 l5">
+    <select id="type">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="multiple">Multiple Choice</option>
+      <option value="boolean">True/False</option>
+    </select>
+    <label>Select Type</label>
+  </div>
+  <div class="input-field col offset-s1 m5 s10 l5">
+    <select id="dificulty">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <label>Dificulty</label>
+  </div>
+  <a id="begin" class="waves-effect waves-light btn col s4 offset-s4">Begin</a>
+</div>
+</section>
+<!-- Icons Font Awesome -->
+<script src="https://use.fontawesome.com/f1462b63cd.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
